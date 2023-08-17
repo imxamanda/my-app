@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+  <Text style={styles.texto}>MOON</Text>
+  <Image
+   style={styles.image}
+   source={require('./assets/lua.png')}
+   />
+  
+    
     </View>
   );
 }
@@ -13,8 +18,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#6959CD',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  image: {
+    marginTop: 55,
+    width: 300 ,
+    height: 300
+  },
+
+  texto: {
+    fontSize: 55,
+    
+  }
 });
