@@ -10,6 +10,6 @@ export default function MinMax(props) {
    const maxValue = Math.max(parseInt(min), parseInt(max));
 
     return(
-        <Text>O maior valor do parametro é:{maxValue}</Text>
+        <Text>O maior valor do parametro é: {maxValue}</Text>
     )
 }
