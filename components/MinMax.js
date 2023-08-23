@@ -6,13 +6,10 @@ import { Text } from 'react-native'
 export default function MinMax(props) {
 
    const {min, max} = props;
-   console.warn(props);
-
+  
+   const maxValue = Math.max(parseInt(min), parseInt(max));
 
     return(
-        <>
-        <Text>{props.min}</Text>
-        <Text>{props.max}</Text>
-        </>
+        <Text>O maior valor do parametro é:{maxValue}</Text>
     )
 }
