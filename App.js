@@ -13,7 +13,6 @@ export default function App() {
    source={require('./assets/cloud.png')}
     />
   
-  
     <MeuComponente/>
     <MinMax min='10' max='20'/>
     
