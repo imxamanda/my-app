@@ -2,12 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import MeuComponente from './components/MeuComponente';
 import MinMax from './components/MinMax';
-import NumeroAleatorio from './components/NumeroAleatorio';
+ import NumeroAleatorio from './components/NumeroAleatorio';
+import ComponenteControlado from './components/semana04/comunicacao-direta/ComponenteControlado';
+import Pai from './components/semana04/comunicacao-direta/comunicacao-indireta/Pai';
+// import Pai from './components/semana04/comunicacao-direta/Pai';
 
 export default function App() {
   return (
     <View style={styles.container}>
-    <ImageBackground source={require('./assets/rainbow.jpg')} style={styles.imageBackground}>
+    {/* <ImageBackground source={require('./assets/rainbow.jpg')} style={styles.imageBackground}>
     <Text style={styles.texto}>MOON</Text>
     <Image
    style={styles.image}
@@ -17,7 +20,9 @@ export default function App() {
     <MeuComponente/>
     <MinMax min='10' max='20'/>
     <NumeroAleatorio min={10} max={20}/>
-   </ImageBackground>
+   </ImageBackground> 
+   <Pai/>*/}
+   <ComponenteControlado/>
     </View>
   );
 }
