@@ -12,7 +12,7 @@ import Profile from './components/semana4/Profile';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View >
     {/* <ImageBackground source={require('./assets/rainbow.jpg')} style={styles.imageBackground}>
     <Text style={styles.texto}>MOON</Text>
     <Image
@@ -27,37 +27,44 @@ export default function App() {
    <Pai/>*/}
    {/* <ComponenteControlado/> */}
    {/* <ParOuImpar/> */}
-   {/* <IntroducaoEstilos/> */}
-   <Profile/>
+    {/* <IntroducaoEstilos/>  */}
+    <Profile
+      imgUri='https://www.fakepersongenerator.com/Face/female/female20161024753601562.jpg'
+      genero='Feminino'
+      nome='Felicia J Ochoa'
+      email='aiyana1980@gmail.com'
+      telefone='630-337-6439'
+    /> 
+
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#C0C0C0',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#C0C0C0',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
 
-  image: {
-    width: 300 ,
-    height: 300
-  },
+//   image: {
+//     width: 300 ,
+//     height: 300
+//   },
 
-  texto: {
-    fontSize: 55,
-    alignItems: "center",
-    marginBottom: 50
+//   texto: {
+//     fontSize: 55,
+//     alignItems: "center",
+//     marginBottom: 50
     
-  },
+//   },
 
-  imageBackground: {
-    flex: 1,
-    resizeMode: "cover",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%"
-  }
-});
+//   imageBackground: {
+//     flex: 1,
+//     resizeMode: "cover",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     width: "100%"
+//   }
+// });

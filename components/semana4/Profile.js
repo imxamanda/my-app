@@ -1,35 +1,66 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Image, StyleSheet, Text, View } from 'react-native'
 
-export default function Profile() {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Image
-          source={{url:'https://portaledicase.com/wp-content/uploads/2022/11/shutterstock_1738196390-1024x683.jpg'}}
-          style={styles.img}
+export default function Profile({ imgUri, genero, nome, telefone, email }) {
+    return (
+        <View style={styles.container}>
+            <Image
+                source={{ uri:'https://www.fakepersongenerator.com/Face/female/female20161024753601562.jpg' }}
+                style={styles.img}
+            />
 
-      />
-    </View>
-  )
+            <View style={styles.labelContainer}>
+                <Text style={[styles.texto, styles.textoLabel]}>Gênero</Text>
+                <Text style={styles.texto}>{genero}</Text>
+            </View>
+
+            <View style={styles.labelContainer}>
+                <Text style={[styles.texto, styles.textoLabel]}>Nome</Text>
+                <Text style={styles.texto}>{nome}</Text>
+            </View>
+
+
+            <View style={styles.labelContainer}>
+                <Text style={[styles.texto, styles.textoLabel]}>Telefone</Text>
+                <Text style={styles.texto}>{telefone}</Text>
+            </View>
+
+            <View style={styles.labelContainer}>
+                <Text style={[styles.texto, styles.textoLabel]}>Email</Text>
+                <Text style={styles.texto}>{email}</Text>
+            </View>
+
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
-    },
-    img:{
+        justifyContent: 'center',
+        backgroundColor: 'yellow',
+        margin: 20
+    }, img: {
         width: 250,
         height: 250,
         borderWidth: 2,
         borderColor: 'gray',
-        borderRadius: 500
+        borderRadius: 500,
+        padding: 20
     },
-    text: {
+    labelContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        padding: 20
+    },
+    texto: {
         fontSize: 20
     },
-    textLabel: {
-        
+    textoLabel: {
+        color: 'gray',
+        fontWeight: 'bold'
     }
 })
