@@ -5,6 +5,9 @@ import MinMax from './components/MinMax';
  import NumeroAleatorio from './components/NumeroAleatorio';
 import ComponenteControlado from './components/semana04/comunicacao-direta/ComponenteControlado';
 import Pai from './components/semana04/comunicacao-direta/comunicacao-indireta/Pai';
+import IntroducaoEstilos from './components/semana4/IntroducaoEstilos';
+import ParOuImpar from './components/semana4/ParOuImpar';
+import Profile from './components/semana4/Profile';
 // import Pai from './components/semana04/comunicacao-direta/Pai';
 
 export default function App() {
@@ -22,7 +25,10 @@ export default function App() {
     <NumeroAleatorio min={10} max={20}/>
    </ImageBackground> 
    <Pai/>*/}
-   <ComponenteControlado/>
+   {/* <ComponenteControlado/> */}
+   {/* <ParOuImpar/> */}
+   {/* <IntroducaoEstilos/> */}
+   <Profile/>
     </View>
   );
 }
