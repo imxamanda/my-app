@@ -2,7 +2,8 @@ import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
 
 export default function Profile({ imgUri, genero, nome, telefone, email }) {
-    return (
+    
+  return (
         <View style={styles.container}>
             <Image
                 source={{ uri:'https://www.fakepersongenerator.com/Face/female/female102277972083.jpg' }}
