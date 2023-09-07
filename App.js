@@ -29,11 +29,11 @@ export default function App() {
    {/* <ParOuImpar/> */}
     {/* <IntroducaoEstilos/>  */}
     <Profile
-      imgUri='https://www.fakepersongenerator.com/Face/female/female20161024753601562.jpg'
+      imgUri='https://www.fakepersongenerator.com/Face/female/female102277972083.jpg'
       genero='Feminino'
-      nome='Felicia J Ochoa'
-      email='aiyana1980@gmail.com'
-      telefone='630-337-6439'
+      nome='Laura W Mortensen'
+      email='olaf2008@hotmail.com'
+      telefone='213-200-6760'
     /> 
 
     </View>
