@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Button, MD2Colors } from 'react-native-paper';
 import MeuComponente from './components/MeuComponente';
 import MinMax from './components/MinMax';
  import NumeroAleatorio from './components/NumeroAleatorio';
@@ -28,13 +29,18 @@ export default function App() {
    {/* <ComponenteControlado/> */}
    {/* <ParOuImpar/> */}
     {/* <IntroducaoEstilos/>  */}
-    <Profile
+    {/* <Profile
       imgUri='https://www.fakepersongenerator.com/Face/female/female102277972083.jpg'
       genero='Feminino'
       nome='Laura W Mortensen'
       email='olaf2008@hotmail.com'
       telefone='213-200-6760'
-    /> 
+    />  */}
+
+    <ActivityIndicator animating={true} color={MD2Colors.red800} size={'large'} />
+    <Button >
+
+    </Button>
 
     </View>
   );
